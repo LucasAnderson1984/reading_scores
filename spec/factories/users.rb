@@ -6,13 +6,13 @@ FactoryBot.define do
     email { Faker::Internet.email }
     password { Faker::Internet.password }
     uuid { SecureRandom.uuid }
-  end
 
-  trait :confirmed do
-    confirmed_at Time.zone.now
-  end
+    trait :confirmed do
+      confirmed_at Time.zone.now
+    end
 
-  trait :inactive do
-    is_active false
+    trait :inactive do
+      is_active false
+    end
   end
 end

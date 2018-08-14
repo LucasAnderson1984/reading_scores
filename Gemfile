@@ -7,6 +7,7 @@ ruby '~> 2.5.1'
 
 gem 'bootsnap', '>= 1.1.0', require: false
 gem 'bootstrap', '~> 4.1.1'
+gem 'classy_enum'
 gem 'devise'
 gem 'devise_invitable'
 gem 'figaro'

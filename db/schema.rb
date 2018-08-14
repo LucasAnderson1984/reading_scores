@@ -10,10 +10,21 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2018_06_28_173818) do
+ActiveRecord::Schema.define(version: 2018_08_14_054143) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
+
+  create_table "teachers", force: :cascade do |t|
+    t.string "uuid", null: false
+    t.string "first_name"
+    t.string "last_name"
+    t.string "grade"
+    t.boolean "is_active", default: true, null: false
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+    t.index ["last_name", "first_name"], name: "index_teachers_on_last_name_and_first_name", unique: true
+  end
 
   create_table "users", force: :cascade do |t|
     t.string "uuid", null: false
