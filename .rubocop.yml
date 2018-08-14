@@ -1,0 +1,17 @@
+AllCops:
+  Exclude:
+    - 'bin/*'
+    - 'db/schema.rb'
+    - 'vendor/**/*'
+  TargetRubyVersion: 2.5
+
+Rails:
+  Enabled: true
+
+Metrics/BlockLength:
+  Exclude:
+    - 'config/initializers/simple_form.rb'
+    - 'config/initializers/simple_form_bootstrap.rb'
+    - 'spec/**/*.rb'
+Style/AndOr:
+  EnforcedStyle: conditionals
