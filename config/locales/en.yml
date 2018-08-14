@@ -34,10 +34,15 @@ en:
       update:
         failure: "I'm sorry, but we were unable to update the user"
         success: 'Thank you, the user has been updated'
-  presenters:
-    user:
-      active: 'Active'
-      inactive: 'Inactive'
+  classy_enum:
+    grade:
+      kindergarden: 'Kindergarden'
+      first: 'First'
+      second: 'Second'
+      third: 'Third'
+      fourth: 'Fourth'
+      fifth: 'Fifth'
+      sixth: 'Sixth'
   home:
     index:
       title: 'Reading Scores'
@@ -47,12 +52,15 @@ en:
       title: 'Reading Scores'
     nav:
       home: 'Reading Scores'
-
   menu:
     admin:
       users: 'Users'
     sign_in: 'Sign In'
     sign_out: 'Sign Out'
+  presenters:
+    user:
+      active: 'Active'
+      inactive: 'Inactive'
   simple_form:
     labels:
       user_entry:
